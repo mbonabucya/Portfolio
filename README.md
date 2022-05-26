@@ -48,3 +48,6 @@ Give a ⭐️ if you like this porto folio!
 ## Acknowledgments
 N/A
 
+## License
+
+MIT 
