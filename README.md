@@ -32,9 +32,9 @@ Open index.html located at the route folder of the project
 
 ## MBONABUCYA James
 
-GitHub: @github.com/mbonabucya  
-Twitter: @Mbonabucya12  
-LinkedIn: https://linkedin.com/james-mbonabucya
+- GitHub: [@mbonabucya](https://github.com/mbonabucya)
+- Twitter: [@Mbonabucya12](https://twitter.com/Mbonabucya12)
+- LinkedIn: [@James-mbonabucya](https://linkedin.com/in/james-mbonabucya)
 
 ## 🤝 Contributing
 
