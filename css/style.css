@@ -111,3 +111,23 @@ ul {
   text-decoration: none;
   list-style: none;
 }
+.works
+{
+    display: grid;
+    gap: 10px;
+}
+.blog{
+    /* Snapshoot Portfolio */
+
+width: 295px;
+height: 220px;
+
+background: url(../Image/blog_drbl.png);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
