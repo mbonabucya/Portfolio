@@ -22,6 +22,14 @@
   flex-grow: 0;
 }
 
+.front-end p {
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+  font-size: 17px;
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .navbar a p {
   float: left;
   color: blue;
@@ -54,8 +62,8 @@
 .headline {
   display: flex;
   flex-direction: column;
-  padding: 120px 10px 150px 40px;
-  gap: 40px;
+  padding: 120px 10px 1px 40px;
+  gap: 20px;
   background-image: url("../Image/Background.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,7 +115,414 @@
   }
 }
 
-ul {
+#social {
   text-decoration: none;
   list-style: none;
+}
+
+.works-container {
+  display: grid;
+  grid-column: 1/6;
+  padding: 120px 10px 10px 40px;
+  gap: 40px;
+  margin-top: 0;
+}
+
+.blog-background-Image {
+  /* Snapshoot Portfolio */
+
+  width: 400px;
+  height: 300px;
+  background: url(../Image/blog_drbl.png);
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.tonic {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/*
+.tonic-header {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+*/
+
+.tonic-header {
+  margin-top: 40px;
+}
+
+.tonic-header .canopies {
+  width: 55px;
+  height: 16px;
+
+  /* Caption / 1 - Bolder */
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  color: #344563;
+  list-style: none;
+}
+
+.tonic-header .canopy-list .canopies {
+  margin-top: 10px;
+}
+
+.tonic-header .back {
+  /* Text */
+  margin-top: 10px;
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #7a869a;
+}
+
+.tonic-header .canopy-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.tonic h1 {
+  width: 295px;
+  height: 36px;
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+
+  /* or 138% */
+
+  /* Neutrals/N800 */
+  color: #172b4d;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.Multi-Post h1 {
+  width: 295px;
+  height: 25px;
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #172b4d;
+}
+
+.tonic-body {
+  /* Primary Text */
+
+  width: 295px;
+  height: 76px;
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+
+  /* or 160% */
+
+  /* Neutrals/N600 */
+  color: #344563;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.work-category {
+  margin-top: 20px;
+}
+
+.work-category ul {
+  list-style: none;
+}
+
+.work-category-language li p {
+  float: left;
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+
+  /* Primary/B400 */
+  color: #6070ff;
+}
+
+.Projects {
+  margin-top: 20px;
+}
+
+.Projects button {
+  color: #396df2;
+  background-color: white;
+  border: 1px solid #396df2;
+  padding: 10px;
+  border-radius: 4%;
+  text-align: center;
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  display: flex;
+}
+
+.resume button {
+  width: auto;
+  color: #396df2;
+  background-color: white;
+  border: 1px solid #396df2;
+  padding: 10px;
+  border-radius: 5%;
+  text-align: center;
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.Projects button:hover {
+  border: 1px solid #396df2;
+  padding: 15px;
+}
+
+.Multi-Post-Image {
+  width: 400px;
+  height: 300px;
+  background: url(../Image/image_processing.png);
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.tonic-Image {
+  width: 400px;
+  height: 300px;
+  background: url(../Image/acrobatic-canopy.png);
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.Professional-art-Image {
+  width: 400px;
+  height: 300px;
+  background: url(../Image/Professional-art.png);
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.About-me {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 1px 40px;
+  gap: 40px;
+  margin-top: 0;
+}
+
+.myself {
+  width: 327px;
+  height: 144px;
+  top: 113px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#About-connect {
+  width: 117px;
+  height: 24px;
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#About-social {
+  text-decoration: none;
+  list-style: none;
+}
+
+.resume button:hover {
+  border: 1px solid #396df2;
+  padding: 15px;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.front-end-languages-header {
+  display: flex;
+}
+
+.front-end-languages-header img {
+  margin-left: 200px;
+  margin-right: 64px;
+  height: 16px;
+  width: 16px;
+}
+
+.front-end {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 15px;
+  margin-right: 36px;
+  align-items: center;
+  background: #f7f7f9;
+  border-radius: 8px;
+  border: 1px solid #fff;
+
+  /* Body / 3 - Bolder */
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.front-end:hover {
+  border: 1px solid #396df2;
+}
+
+.frame-work {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #dfe1e6;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.frame-work img {
+  margin-left: 200px;
+  margin-right: 66px;
+  height: 16px;
+  width: 16px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #dfe1e6;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.skills img {
+  margin-left: 269px;
+  margin-right: 66px;
+  height: 16px;
+  width: 16px;
+}
+
+.work-category-language {
+  display: flex;
+  gap: 30px;
+}
+
+.work-category-language li {
+  padding: 10px;
+  width: 85px;
+  height: 16px;
+
+  /* Button / Small */
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  color: #6070ff;
+  background-color: #f7f7f9;
+  border-radius: 7%;
+}
+
+.tonic-project {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  border: 1px solid #dfe1e6;
+  top: 114px;
+  left: 24px;
+  padding: 16px;
+  border-radius: 16px;
+  gap: 12px;
+}
+
+.Multipost-project {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  border: 1px solid #dfe1e6;
+  top: 114px;
+  left: 24px;
+  padding: 16px;
+  border-radius: 16px;
+  gap: 12px;
+}
+
+.arts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  border: 1px solid #dfe1e6;
+  top: 114px;
+  left: 24px;
+  padding: 16px;
+  border-radius: 16px;
+  gap: 12px;
+}
+
+.professional-arts h1 {
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+
+  /* Project Title */
+
+  width: 295px;
+  height: 36px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
