@@ -107,16 +107,18 @@
   }
 }
 
-ul {
+#social {
   text-decoration: none;
   list-style: none;
 }
-.works
+.works-container
 {
     display: grid;
-    gap: 10px;
+    padding: 120px 10px 150px 40px;
+    gap: 40px;
 }
-.blog{
+
+.blog-background-Image{
     /* Snapshoot Portfolio */
 
 width: 295px;
@@ -130,4 +132,126 @@ flex: none;
 order: 0;
 flex-grow: 0;
 
+
+}
+
+.tonic
+{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tonic-header
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.tonic div h1
+{
+    /* Project Title */
+
+width: 295px;
+height: 36px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+/* or 138% */
+
+/* Neutrals/N800 */
+color: #172B4D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.tonic-body
+{
+    /* Primary Text */
+
+width: 295px;
+height: 76px;
+
+/* Body / 3 */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* or 160% */
+
+/* Neutrals/N600 */
+color: #344563;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.work-category ul
+{ 
+    list-style: none;
+}
+
+.work-category ul li p
+{
+    float: left;
+    margin-right: 10px;
+    /* html */
+
+width: 29px;
+height: 16px;
+
+/* Button / Small */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+letter-spacing: 0.03em;
+
+/* Primary/B400 */
+color: #6070FF;
+
+
+
+}
+
+.Projects button
+{
+    /* See Project
+
+width: 100px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 24px;
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+
+/* Primary/B500 */
+
+color: #396DF2;
+background-color: white;
+border: 1px solid #396DF2;
+padding:50px;
+
+border: 30%;
 }
