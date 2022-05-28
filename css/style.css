@@ -199,13 +199,29 @@
 .tonic h1 {
   /* Project Title */
 
+
+
+
+  /* Project Title */
+
   width: 295px;
   height: 36px;
   font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 32px;
+  line-height: 44px;
+
+  /* or 138% */
+
+  /* Neutrals/N800 */
   color: #172b4d;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .Multi-Post h1 {
@@ -335,9 +351,17 @@
 .About-me {
   display: flex;
   flex-direction: column;
-  padding: 120px 10px 150px 40px;
+  padding: 10px 10px 1px 40px;
   gap: 40px;
   margin-top: 0;
+}
+
+.myself {
+  width: 327px;
+  height: 144px;
+  top: 113px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 #About-connect {
@@ -459,15 +483,53 @@
 .tonic-project {
   display: flex;
   flex-direction: column;
+  margin-top: 0;
+  border: 1px solid #dfe1e6;
+  top: 114px;
+  left: 24px;
+  padding: 16px;
+  border-radius: 16px;
+  gap: 12px;
+}
+
+.Multipost-project {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  border: 1px solid #dfe1e6;
+  top: 114px;
+  left: 24px;
+  padding: 16px;
+  border-radius: 16px;
+  gap: 12px;
+}
+
+.arts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  border: 1px solid #dfe1e6;
+  top: 114px;
+  left: 24px;
+  padding: 16px;
+  border-radius: 16px;
+  gap: 12px;
 }
 
 .professional-arts h1 {
-  width: 295px;
-  height: 25px;
   font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  color: #172b4d;
   margin-top: 10px;
+
+  /* Project Title */
+
+  width: 295px;
+  height: 36px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
