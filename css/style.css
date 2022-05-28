@@ -197,13 +197,6 @@
 }
 
 .tonic h1 {
-  /* Project Title */
-
-
-
-
-  /* Project Title */
-
   width: 295px;
   height: 36px;
   font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -216,7 +209,6 @@
 
   /* Neutrals/N800 */
   color: #172b4d;
-
 
   /* Inside auto layout */
   flex: none;
@@ -291,7 +283,6 @@
   font-weight: bold;
   line-height: 24px;
   display: flex;
-
 }
 
 .resume button {
