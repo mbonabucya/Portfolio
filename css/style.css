@@ -54,7 +54,7 @@
 .headline {
   display: flex;
   flex-direction: column;
-  padding: 120px 10px 150px 40px;
+  padding: 120px 10px 1px 40px;
   gap: 40px;
   background-image: url("../Image/Background.svg");
   background-repeat: no-repeat;
@@ -114,7 +114,7 @@
 .works-container
 {
     display: grid;
-    padding: 120px 10px 150px 40px;
+    padding: 120px 10px 10px 40px;
     gap: 40px;
 }
 
@@ -230,28 +230,200 @@ color: #6070FF;
 
 .Projects button
 {
-    /* See Project
+   
+    width: auto;
+    padding: 5px;
+    color: #396DF2;
+    background-color: white;
+    border: 1px solid #396DF2;
+    padding:10px;
+    border-radius: 5%;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 17px;
+    font-style: normal;
 
-width: 100px;
-height: 24px;
+}
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 17px;
-line-height: 24px;
+.Projects button:hover
+{
+    border: 1px solid #396DF2;  
+    padding: 15px;
+}
 
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.03em;
+.Multi-Post-Image
+{
 
-/* Primary/B500 */
 
+width: 295px;
+height: 220px;
+
+background: url(../Image/image_processing.png);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.tonic-Image
+{
+width: 295px;
+height: 220px;
+background: url(../Image/Snapshoot\ Portfolio\ \(2\).png);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+.Professional-art-Image
+{
+    width: 295px;
+    height: 220px;
+    
+    background: url(../Image/Professional-art.png);
+    border-radius: 8px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.About-me
+{
+
+    display: flex;
+    flex-direction: column;
+    padding: 120px 10px 150px 40px;
+    gap: 40px;
+
+}
+
+.resume button
+{
+width: auto;
+padding: 5px;
 color: #396DF2;
 background-color: white;
 border: 1px solid #396DF2;
-padding:50px;
+padding:10px;
+border-radius: 5%;
+text-align: center;
+font-family: 'Poppins';
+font-style: normal;
+font-size: 17px;
+font-style: normal;
 
-border: 30%;
+
+}
+
+.resume button:hover
+{
+    border: 1px solid #396DF2;  
+    padding: 15px;
+}
+
+.languages{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.front-end-languages-header
+{
+    display: flex;
+
+}
+.front-end-languages-header img{
+    margin-left: 200px;
+    margin-right: 64px;
+    height: 16px;
+    width: 16px;
+}
+.front-end
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 15px;
+}
+.front-end p
+{
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    font-size: 17px;
+    font-family: 'Poppins','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.front-end:hover
+{
+    border:1px solid #396DF2;
+}
+.front-end
+{
+
+margin-right: 36px;
+align-items: center;
+background: #F7F7F9;
+border-radius: 8px;
+border: 1px solid #FFFFFF;
+
+
+/* Body / 3 - Bolder */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 20px;
+color: #253858;  
+}
+
+.frame-work
+{
+display: flex;
+flex-direction: row;
+
+}
+.frame-work{
+     border-bottom: 1px solid #DFE1E6;
+     margin-right: 24px;
+     margin-left: 24px;
+
+ 
+}
+.frame-work img{
+    margin-left: 200px;
+    margin-right: 66px;
+    height: 16px;
+    width: 16px;
+}
+
+.skills{
+    border-bottom: 1px solid #DFE1E6;
+    margin-right: 24px;
+    margin-left: 24px;
+
+
+}
+.skills img
+{
+    margin-left: 269px;
+    margin-right: 66px;
+    height: 16px;
+    width: 16px;
+}
+.skills
+{
+display: flex;
+flex-direction: row;
+
 }
