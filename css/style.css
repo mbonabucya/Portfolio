@@ -544,27 +544,29 @@ padding-top:103px ;
 text-align: center;
 }
 .contact-container p{
-height: 102px;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 28px;
 color: #EBEBFF;
-margin: 24px 24px;
+margin: 24px;
 }
 .my-form{
   display: flex;
   flex-direction: column;
-  margin-top:20px ;
+  margin-top: 20px ;
 }
 .my-form input{
   height: 48px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 400;
   padding:15px 38px 15px 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 8px;
-  margin: 24px 24px;
+  margin: 0 24px 24px;
 }
 .my-form textarea{
   height: 170px;
@@ -572,7 +574,7 @@ margin: 24px 24px;
   font-weight: 400;
   padding:15px 38px 15px 16px;
   border-radius: 8px;
-  margin: 24px 24px;
+  margin: 0 24px 24px;
 }
 
 .my-form button{
