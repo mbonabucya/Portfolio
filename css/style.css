@@ -589,16 +589,32 @@ margin-bottom: 45px;
 }
 .my-form button:hover
 {
-font-family: 'Poppins','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/* Buttons */
+
+width: 69px;
+height: 24px;
+
+/* Theme 1 / Button Normal  */
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 17px;
-padding:12px 16px 12px 16px ;
-border-radius: 10px;
-color: #0d0d11;
-width: 327px;
-margin-left: 24px;
-margin-bottom: 45px;
+line-height: 24px;
+/* identical to box height, or 141% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+
+/* Theme 1 /  Neutrals 11 */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
 }
 
 input::placeholder{
