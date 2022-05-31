@@ -533,7 +533,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 100px;
-  gap: 10px;
+ 
 
 }
 .contact-container h1 {
@@ -546,10 +546,7 @@ padding-top:103px ;
 width: 100%;
 text-align: center;
 }
-.contact-container p
-{
-  /* Primary Text */
-
+.contact-container p{
 height: 102px;
 font-family: 'Poppins';
 font-style: normal;
@@ -557,40 +554,31 @@ font-weight: 400;
 font-size: 20px;
 line-height: 28px;
 color: #EBEBFF;
-margin-right: 24px;
-margin-left:24px ;
-
-/* Inside auto layout */
+margin: 24px 24px;
 }
-.my-form
-{
+.my-form{
   display: flex;
   flex-direction: column;
   margin-top:20px ;
-
 }
 .my-form input{
-
   height: 48px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 400;
   padding:15px 38px 15px 16px;
   border-radius: 8px;
-  margin-bottom: 18px;
   margin: 24px 24px;
 }
-.my-form textarea
-{
+.my-form textarea{
   height: 170px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 400;
   padding:15px 38px 15px 16px;
   border-radius: 8px;
   margin: 24px 24px;
-
 }
-.my-form button
-{
+
+.my-form button{
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
@@ -601,7 +589,26 @@ color: #6070FF;
 width: 150px;
 margin-left: 24px;
 margin-bottom: 45px;
+}
 
+input::placeholder{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 20px;
+color: #172B4D;
+}
+textarea::placeholder
+{
+
+bottom: 15px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #B3BAC5;
 
 
 }
