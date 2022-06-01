@@ -525,14 +525,27 @@
 }
 /*  Contact form style */ 
 
+.contact-wrapper
+{
+  background-image: url("../Image/contact-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top:50px;
+}
 .contact-container
 {
   display: flex;
   flex-direction: column;
-  background-image: url("../Image/contact-bg.svg");
+  background-image: url("../Image/contact-form-shapes-mobile.png");
   background-size: cover;
+  margin-top: 103px;
+  background-size: 65% 99%;
   background-repeat: no-repeat;
-  margin-top: 100px;
+  background-position-x: right;
+  background-position-y: 15px;
+  z-index: -1;
+
+
 }
 .contact-container h1 {
 font-family: Poppins,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -576,7 +589,6 @@ margin: 24px;
   border-radius: 8px;
   margin: 0 24px 24px;
 }
-
 .my-form button{
 font-family: 'Poppins';
 font-style: normal;
