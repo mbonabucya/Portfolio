@@ -593,32 +593,16 @@ background-color: white;
 }
 .my-form button:hover
 {
-/* Buttons */
-
-width: 69px;
-height: 24px;
-
-/* Theme 1 / Button Normal  */
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 17px;
 line-height: 24px;
-/* identical to box height, or 141% */
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.03em;
-
-/* Theme 1 /  Neutrals 11 */
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
+padding: 12px;
+width: 150px;
+height: 48px;
+background-color: #2230D2;
+color: white;
 }
 
 input::placeholder{
