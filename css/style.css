@@ -527,10 +527,12 @@
 
 .contact-wrapper
 {
+  margin-top: 50px;
   background-image: url("../Image/contact-bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top:50px;
+  padding-bottom: 140px;
 }
 .contact-container
 {
@@ -544,8 +546,6 @@
   background-position-x: right;
   background-position-y: 15px;
   z-index: -1;
-
-
 }
 .contact-container h1 {
 font-family: Poppins,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
