@@ -588,6 +588,8 @@ color: #6070FF;
 width: 150px;
 margin-left: 24px;
 margin-bottom: 45px;
+border: 1px solid #7f8cff;
+background-color: white;
 }
 .my-form button:hover
 {
