@@ -743,5 +743,22 @@ textarea::placeholder {
     display: flex;
     gap: 20px;
   }
-  
+  .works-container
+  {
+    display: grid;
+  }
+
+  .tonic-project
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  .tonic-project .background-image
+  {
+    background-image: url("../Image/blog_drbl.png");
+    background-repeat: no-repeat;
+
+
+  }
+
 }
