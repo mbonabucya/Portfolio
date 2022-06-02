@@ -1,28 +1,29 @@
 # Portfolio
 
->This is  my personal Porto folio on which you can find my recent work and reach out to my social media platforms.
+> This is my personal Porto folio on which you can find my recent work and reach out to my social media platforms.
 
-### Built with 
+### Built with
 
 -HTML  
 -CSS  
--Technologies used: LINT, HINT, LINTHOUSE 
+-Technologies used: LINT, HINT, LINTHOUSE
 
-### Llive Demo 
+### Llive Demo
 
 - https://mbonabucya.github.io/Portfolio/html/index.html
 
-## Getting Started 
+## Getting Started
 
 -Clone the project via terminal or download the package.  
--Open index.html file via browser  
+-Open index.html file via browser
 
 ## Prerequisites
 
 - Install any supported Browser
 
 ## Set up
--npx stylelint "**/*.{css,scss}" npx hint ./index.html
+
+-npx stylelint "\*_/_.{css,scss}" npx hint ./index.html
 
 ## Usage
 
@@ -36,18 +37,25 @@ Open index.html located at the route folder of the project
 - Twitter: [@Mbonabucya12](https://twitter.com/Mbonabucya12)
 - LinkedIn: [@James-mbonabucya](https://linkedin.com/in/james-mbonabucya)
 
+## SIDNEY Kaguli
+
+- GitHub: [XsidX](https://github.com/XsidX)
+- Twitter: [@\_sid_o](https://twitter.com/_sid_o_)
+- LinkedIn: [Sidney Kaguli](https://www.linkedin.com/in/sidney-kaguli-0116801a6/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!  
-if you feel like want to contribute , Please reach out to me via above the social media 
+if you feel like want to contribute , Please reach out to me via above the social media
 
-## Show your Support 
+## Show your Support
 
 Give a ⭐️ if you like this porto folio!
 
 ## Acknowledgments
+
 N/A
 
 ## License
 
-MIT 
+MIT
