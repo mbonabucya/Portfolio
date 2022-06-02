@@ -640,3 +640,108 @@ textarea::placeholder {
   line-height: 24px;
   color: #b3bac5;
 }
+
+@media (min-width: 768px) {
+  /* Desktop version */
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Navigation bar */
+
+  .navbar {
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .title p {
+    width: 920px;
+    height: 98px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+    margin-left: 260px;
+  }
+
+  .navbar a p {
+    float: left;
+    color: #6070ff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+    margin-left: 155px;
+    margin-top: 25px;
+    font-weight: 700;
+    height: 20px;
+  }
+
+  .navbar-list {
+    float: right;
+    margin-right: 154px;
+    margin-top: 25px;
+  }
+
+  .navbar-list a {
+    float: left;
+    color: #344563;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Poppins, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .navbar-list .icon {
+    display: none;
+  }
+
+  .headline {
+    background-image: url("../Image/Header.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin-right: 108px;
+    box-sizing: border-box;
+    padding-bottom: 200px;
+  }
+
+  .title h1 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: #091e42;
+    width: 920px;
+    height: 122px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-left: 260px;
+    margin-top: 100px;
+  }
+
+  .social-media {
+    margin-left: 260px;
+  }
+
+  #connect {
+    width: 117px;
+    height: 24px;
+    font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+  }
+
+  #social-media {
+    display: flex;
+    gap: 20px;
+  }
+  
+}
