@@ -37,12 +37,6 @@ Open index.html located at the route folder of the project
 - Twitter: [@Mbonabucya12](https://twitter.com/Mbonabucya12)
 - LinkedIn: [@James-mbonabucya](https://linkedin.com/in/james-mbonabucya)
 
-## SIDNEY Kaguli
-
-- GitHub: [XsidX](https://github.com/XsidX)
-- Twitter: [@\_sid_o](https://twitter.com/_sid_o_)
-- LinkedIn: [Sidney Kaguli](https://www.linkedin.com/in/sidney-kaguli-0116801a6/)
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!  
@@ -58,4 +52,4 @@ N/A
 
 ## License
 
-MIT
+This project is [MIT](./LICENSE) licensed.
