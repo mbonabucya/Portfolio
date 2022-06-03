@@ -138,6 +138,7 @@
   margin-top: 24px;
   margin-bottom: 24px;
   border-radius: 8px;
+  transition: width 2s;
 }
 
 .arts {
@@ -755,6 +756,22 @@ textarea::placeholder {
     margin-top: 24px;
     margin-bottom: 24px;
     border-radius: 8px;
+  }
+
+  .animate:hover {
+    animation: fade ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 
   .arts {
