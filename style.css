@@ -141,7 +141,6 @@
   transition: width 2s;
 }
 
-
 .arts {
   background-image: url("image/arts.png");
   width: 544px;
@@ -679,6 +678,7 @@ textarea::placeholder {
     font-size: 15px;
     font-family: Poppins, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
   .navbar-list .icon {
     display: none;
   }
