@@ -12,7 +12,6 @@
 
 - https://mbonabucya.github.io/Portfolio/
 
-
 ## Getting Started
 
 -Clone the project via terminal or download the package.  
