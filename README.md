@@ -10,7 +10,7 @@
 
 ### Llive Demo 
 
-- https://mbonabucya.github.io/Portfolio/html/index.html
+-https://mbonabucya.github.io/Portfolio/
 
 ## Getting Started 
 
