@@ -1,7 +1,8 @@
 
-* {
-  margin: 0;
-  padding: 0;
+html
+{
+  overflow-x: hidden;
+
 }
 
 .navbar {
@@ -110,10 +111,10 @@
 }
 
 .works-container {
-  display: grid;
-  padding: 120px 10px 10px 40px;
+  display: flex;
+  flex-direction: column;
   gap: 40px;
-  margin-top: 0;
+  margin-top: 0; 
 }
 
 .card {
@@ -126,6 +127,7 @@
   align-items: center;
   gap: 12px;
   padding-bottom: 10px;
+  
 }
 
 .nature {
@@ -262,7 +264,7 @@
   background-size: cover;
   margin-left: 42px;
   margin-top: 142px;
-  margin-bottom: 42px;
+ 
 }
 
 .about-header h1 {
@@ -530,11 +532,9 @@
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-weight: 400;
   padding: 15px 38px 15px 16px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 8px;
-  margin: 0 24px 24px;
+  margin: 0 24px 24px 24px;
 }
 
 .my-form textarea {
@@ -544,7 +544,7 @@
   font-weight: 400;
   padding: 15px 38px 15px 16px;
   border-radius: 8px;
-  margin: 0 24px 24px;
+  margin: 0 24px 24px 24px;
 }
 
 .my-form button:hover {
@@ -584,10 +584,51 @@ textarea::placeholder {
     display: block;
     float: left;
   }
+  .technology li {
+    list-style: none;
+  }
 
   .navbar-list a {
     display: none;
   }
+
+.navbar a p {
+  margin-left: 120px;
+}
+
+.card {
+  width: fit-content;
+
+}
+
+.about-me {
+  margin-left: 120px;
+}
+
+.headline {
+  margin-left: 120px;
+}
+.contact-wrapper
+{
+  width: fit-content;
+}
+.contact-container p {
+  text-align: center;
+  padding-left: 80px;
+  color: white;
+}
+.about-header p {
+  /* Primary Text */
+
+  width: 447px;
+  height: 102px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
 }
 
 @media (min-width: 768px) {
@@ -595,8 +636,6 @@ textarea::placeholder {
     margin: 0;
     padding: 0;
   }
-
-  /* Navigation bar */
 
   .navbar {
     background-color: white;
@@ -742,7 +781,7 @@ textarea::placeholder {
     border-radius: 8px;
     margin-left: 42px;
     margin-right: 42px;
-    margin-top: 142px;
+   
     align-items: center;
   }
 
