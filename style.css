@@ -1,8 +1,6 @@
 
-html
-{
+html {
   overflow-x: hidden;
-
 }
 
 .navbar {
@@ -114,7 +112,7 @@ html
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 0; 
+  margin-top: 0;
 }
 
 .card {
@@ -127,7 +125,6 @@ html
   align-items: center;
   gap: 12px;
   padding-bottom: 10px;
-  
 }
 
 .nature {
@@ -264,7 +261,6 @@ html
   background-size: cover;
   margin-left: 42px;
   margin-top: 142px;
- 
 }
 
 .about-header h1 {
@@ -584,6 +580,7 @@ textarea::placeholder {
     display: block;
     float: left;
   }
+
   .technology li {
     list-style: none;
   }
@@ -592,43 +589,44 @@ textarea::placeholder {
     display: none;
   }
 
-.navbar a p {
-  margin-left: 120px;
-}
+  .contact-container p {
+    text-align: center;
+    padding-left: 80px;
+    color: white;
+  }
 
-.card {
-  width: fit-content;
+  .about-header p {
+    /* Primary Text */
 
-}
+    width: 447px;
+    height: 102px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
 
-.about-me {
-  margin-left: 120px;
-}
+  .navbar a p {
+    margin-left: 120px;
+  }
 
-.headline {
-  margin-left: 120px;
-}
-.contact-wrapper
-{
-  width: fit-content;
-}
-.contact-container p {
-  text-align: center;
-  padding-left: 80px;
-  color: white;
-}
-.about-header p {
-  /* Primary Text */
+  .card {
+    width: fit-content;
+  }
 
-  width: 447px;
-  height: 102px;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-}
+  .about-me {
+    margin-left: 120px;
+  }
+
+  .headline {
+    margin-left: 120px;
+  }
+
+  .contact-wrapper {
+    width: fit-content;
+  }
 }
 
 @media (min-width: 768px) {
@@ -781,7 +779,6 @@ textarea::placeholder {
     border-radius: 8px;
     margin-left: 42px;
     margin-right: 42px;
-   
     align-items: center;
   }
 
