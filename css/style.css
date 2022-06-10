@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Poppins,sans-serif;
-  background-color: #e5e5e5;
+  background-color:#E5E5E5;
 }
 
 .header-title {
@@ -27,5 +27,357 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  background-color: white
 }
+
+.title {
+  min-width: 327px;
+
+}
+
+.title h1 {
+  padding-top: 100px;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.headline {
+  height: 600px;
+  margin-top: 64px;
+  background-image: url(../image/header-shapes-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 0 0 0 90px;
+}
+
+.content-wrap {
+  margin: 0 25px;
+}
+
+.navbar a p {
+  float: left;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+}
+
+.navbar-list {
+  display:none;
+}
+
+.icon {
+  display: block;
+  float: left;
+  font-size: 20px;
+  color: #6070ff;
+  width: 16px;
+  }
+
+  .social-media ul {
+    list-style: none;
+    display: flex;
+    margin-left: -45px;
+  }
+
+  .description {
+    height: 146px;
+    min-width: 327px;
+  }
+  
+.description p {
+  font-weight: 400;
+  size: 16px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #344563;
+}
+
+.description h2 {
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.social-media {
+  margin: 10px 0;
+}
+
+.social-media img {
+  width: 25px;
+  height: 25px;
+  color: #505f79;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.works-container
+{
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  margin: 24px;
+  gap: 12px;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+.image {
+  width: 340px;
+  height: 220px;
+  padding: 16px 16px 16px 16px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: -18px;
+}
+
+.project-details h3 {
+  
+  height: 80px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.project-desc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -40px;
+}
+.project-desc h4 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.project-desc ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: -35px;
+
+}
+
+.project-desc ul li {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color:#7A869A;
+  margin-left: 32px;
+}
+
+.about-project p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 0;
+}
+
+.technology ul {
+  margin-top: -18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  margin-left: -10px;
+}
+.technology ul li  {
+  list-style-type: none;
+}
+
+.technology ul li p{
+  border-radius: 8px;
+  background-color: #ebebff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 12px 4px 12px;
+  letter-spacing: 0.03em;
+  color: #1d34ff;
+  margin-left: 5px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+button {
+  width: 120px;
+  color: #396df2;
+  border: 1px solid #396DF2;;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  padding:10px 10px 10px 10px;
+  border-radius: 7px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  margin-left: 8px;
+}
+
+button:hover {
+  box-shadow: 0 8px 16px 0 #4053fc3d;
+  background-color: #6070ff;
+  color: #fff;
+}
+
+button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.about-me {
+  margin-top: 64px;
+  background-image: url("/image/Base-about-myself.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 90px;
+  margin-bottom: -80px;
+}
+
+.resume {
+  width: 200px;
+  font-size: 17px;
+  margin-top: 4px;
+  margin-left:-2px;
+  border-radius: 8px;
+  color: #396df2;
+  background-color: #fff;
+  letter-spacing: 0.03em;
+  border: 1px solid #396df2;
+  padding: 10px 10px 10px 10px;
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.content-wrap h2 {
+padding-top: 114px;
+margin-left: 24px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+color: #172B4D;
+}
+
+.content-wrap p {
+  /* Primary Text */
+
+ margin-left: 24px;
+width: 327px;
+height: 144px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #344563;
+}
+
+.content-wrap h3 {
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-left: 24px;
+}
+
+.content-wrap .social-media
+{
+  margin-left: 24px;
+}
+
+.content-wrap button{
+  margin-left: 24px;
+}
+
+.drop-down {
+  height: 16px;
+  width: 16px;
+  margin-top: 30px;
+}
+
+.ul-1 {
+  list-style-type: none;
+  margin-left: -15px;
+  padding-top:-25px;
+  padding-bottom: 50px;
+}
+
+.li-1_title {
+  list-style-type: none;
+  margin-top: 30px;
+  min-width: 300px;
+  margin-right: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.li-1 h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.ul-2 img {
+  padding: 5px 10px 5px 0;
+}
+
+.ul-2 li {
+  list-style-type: none;
+  margin-bottom: 15px;
+  width: 303px;
+  margin-right: 100px;
+  height: 66.72px;
+  background-color: #e5e5e5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-left: -25px;
+}
+
+.ul-2 li img {
+  padding-left: 15px;
+}
+
+.not-open p {
+  min-width: 300px;
+  margin-right: 50px;
+  height: 1px;
+  background-color: #7a869a;
+}
+
+
+
+
 
