@@ -255,8 +255,7 @@ button:active {
   background-image: url("/image/Base-about-myself.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 90px;
-  margin-bottom: -80px;
+ 
 }
 
 .resume {
@@ -290,7 +289,7 @@ color: #172B4D;
 .content-wrap p {
   /* Primary Text */
 
- margin-left: 24px;
+margin-left: 24px;
 width: 327px;
 height: 144px;
 font-family: 'Poppins';
@@ -376,6 +375,26 @@ color: #344563;
   height: 1px;
   background-color: #7a869a;
 }
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  padding-bottom: 30px;
+  background: #6070ff;
+  border-radius: 90px 0 0 0;
+  color: #fff;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
 
 
 
