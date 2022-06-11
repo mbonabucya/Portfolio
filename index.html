@@ -18,9 +18,9 @@
           <div class="navbar">
               <a><p>James</p></a>
               <nav class="navbar-list">
-                  <a href="#" > Portoflio </a>
-                  <a href="#" > About </a>
-                  <a href="#" > Contact </a>
+                  <a href="#portfolio" > Portoflio </a>
+                  <a href="#about" > About </a>
+                  <a href="#contact" > Contact </a>
               </nav>
               <div class="icon">
                 <i class="fa fa-bars"></i>
@@ -74,8 +74,8 @@
                </div>
             </div>
         </section>
-        <section class="works-container">
-            <div class="project reverse">
+        <section class="works-container" id="portfolio">
+            <div class="project">
                 <div >
                     <img src="image/nature.png" alt="tonic-project" class="image"/>
                 </div>
@@ -110,7 +110,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button type="submit">
+                    <button type="submit" >
                         See Project
                     </button>
                 </div>
@@ -157,7 +157,7 @@
             </div>
 
 
-            <div class="project reverse">
+            <div class="project">
                 <div>
                     <img src="image/blog_drbl.png" alt="facebook-360" class="image" />
                 </div>
@@ -192,7 +192,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button type="submit">
+                    <button type="submit" id="facebook-btn">
                         See Project
                     </button>
                 </div>
@@ -239,8 +239,8 @@
                 </div>
             </div>
         </section>
-        <section class="about-me">
-            <div class="content-wrap">
+        <section class="about-me" id="about">
+            <div class="content-wrapp">
                 <h2>
                     About Myself
                 </h2>
@@ -291,7 +291,7 @@
             <ul class="ul-1">
                 <li class="li-1">
                   <h3 class="li-1_title">
-                    languages <img src="image/dropdown.png" alt="drop-down" class="drop-down">
+                    languages <img src="image/dropdown.png" alt="languages-drop-down" class="drop-down">
                   </h3>
                   <p></p>
                   <ul class="ul-2">
@@ -309,42 +309,42 @@
                 </li>
                 <li class="li-1 not-open">
                   <h3 class="li-1_title">
-                    Frameworks <img src="image/right-arrow.png" alt="right-arrow" class="drop-down">
+                    Frameworks <img src="image/right-arrow.png" alt="framework-right-arrow" class="drop-down">
                   </h3>
                   <p></p>
                 </li>
                 <li class="li-1 not-open">
-                  <h3 class="li-1_title">Skills <img src="image/right-arrow.png" alt="right-arrow" class="drop-down"></h3>
+                  <h3 class="li-1_title">Skills <img src="image/right-arrow.png" alt="skills right-arrow" class="drop-down"></h3>
                   <p></p>
                 </li>
             </ul>
         </section>
 
-        <section class="contact-wrapper">
-            <h2>
-                contact me 
-            </h2>
-            <p>
-                If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
-            </p>
-            <form action="https://formspree.io/f/mwkyyydz" class="my-form" method="post">
-                <ul>
-                    <li>
-                        <input type="text" name="name" id="Name" placeholder="Enter the full Name" required maxlength="30">
-                    </li>
-                    <li>
-                        <input type="email" name="email" id="mail" placeholder="Enter the email" required>
-                    </li>
-                    <li>
-                        <textarea name="message" id="msg" placeholder="write your message" required maxlength="500"></textarea>
-                    </li>
-                    <li>
-                        <button type="submit" value="send" class="resume">
-                             Get It Touch
-                        </button>
-                    </li>
-                </ul>
-            </form>
+        <section class="contact-wrapper" id="contact">
+                <h2>
+                    contact me 
+                </h2>
+                <p>
+                    If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
+                </p>
+                <form action="https://formspree.io/f/mwkyyydz" class="my-form" method="post">
+                    <ul>
+                        <li>
+                            <input type="text" name="name" id="Name" placeholder="Enter the full Name" required maxlength="30">
+                        </li>
+                        <li>
+                            <input type="email" name="email" id="mail" placeholder="Enter the email" required>
+                        </li>
+                        <li>
+                            <textarea name="message" id="msg" placeholder="write your message" required maxlength="500"></textarea>
+                        </li>
+                        <li>
+                            <button type="submit" value="send" class="resume">
+                                 Get It Touch
+                            </button>
+                        </li>
+                    </ul>
+                </form>
         </section>
     </body>
 </html>
