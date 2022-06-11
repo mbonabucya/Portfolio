@@ -576,6 +576,9 @@ textarea::placeholder {
 }
 
 @media (max-width: 767px) {
+  body{
+    overflow-x: hidden;
+  }
   .navbar-list .icon {
     display: block;
     float: left;

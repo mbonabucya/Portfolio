@@ -275,7 +275,7 @@ button:active {
   line-height: 24px;
 }
 
-.content-wrap h2 {
+.content-wrapp h2 {
 padding-top: 114px;
 margin-left: 24px;
 font-family: 'Poppins';
@@ -286,7 +286,7 @@ line-height: 52px;
 color: #172B4D;
 }
 
-.content-wrap p {
+.content-wrapp p {
   /* Primary Text */
 
 margin-left: 24px;
@@ -300,7 +300,7 @@ line-height: 24px;
 color: #344563;
 }
 
-.content-wrap h3 {
+.content-wrapp h3 {
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
@@ -309,14 +309,15 @@ color: #344563;
   margin-left: 24px;
 }
 
-.content-wrap .social-media
+.content-wrapp .social-media
 {
   margin-left: 24px;
 }
 
-.content-wrap button{
+.content-wrapp button{
   margin-left: 24px;
 }
+
 
 .drop-down {
   height: 16px;
