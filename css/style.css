@@ -518,7 +518,8 @@ textarea input::placeholder {
     height: 496px;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    margin-right: 30px;
+    
   }
 
   .image {
@@ -528,9 +529,9 @@ textarea input::placeholder {
   }
 
   .about-project {
-    width: 496px;
+    padding-right: 120px;
   }
-  
+
   #facebook-btn {
     width: 120px;
     color: white;
