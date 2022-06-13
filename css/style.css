@@ -514,13 +514,22 @@ textarea input::placeholder {
     padding-right: 260px;
   }
 
+  .works-container
+  {
+    display: flex;
+    flex-direction: column;
+    margin-left: 260px;
+    align-items: center;
+  }
+
   .project {
     height: 496px;
     display: flex;
     flex-direction: row;
     margin-right: 30px;
-   
+    width: 100%;
   }
+ 
 
   .image {
     height: 448px;
