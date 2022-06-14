@@ -27,6 +27,9 @@ body {
   background-color: white;
 }
 
+.desktop {
+  display: none;
+}
 .title {
   min-width: 327px;
 }
@@ -71,15 +74,24 @@ body {
   background-color:#6070FF;
   align-items: center;
   gap: 20px;
+  backdrop-filter: blur(8px); 
   height: 100vh;
-  backdrop-filter: blur(8px);
-  mix-blend-mode: multiply;  
+  position: fixed;
+  top: 0;
+  left: -100%;
+  mix-blend-mode: multiply;
+  margin-right: 200px;
+
 }
 
-
 .navbar-list a {
-  color: blue;
-  text-decoration: none;
+color: #FFFFFF;
+text-decoration: none;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 44px;
 }
 
 .icon {
@@ -90,6 +102,7 @@ body {
   width: 16px;
   padding-right: 24px;
 }
+
 
 .social-media ul {
   list-style: none;
@@ -476,6 +489,10 @@ textarea input::placeholder {
 @media screen and (min-width: 768px) {
   body {
     overflow-x: hidden;
+  }
+
+  .navbar {
+    display: none;
   }
 
   .icon {
