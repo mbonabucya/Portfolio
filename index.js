@@ -5,7 +5,6 @@ const portfolio = document.querySelector('#nav-item2');
 const contact = document.querySelector('#nav-item3');
 
 function show() {
-  console.log('clicked me');
   navmenu.style.top = '0';
   navmenu.style.left = '10px';
   navmenu.style.position = 'fixed';
