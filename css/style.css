@@ -52,7 +52,6 @@ body {
   background-repeat: no-repeat;
   background-color: #fff;
   border-radius: 0 0 0 90px;
-  min-width: fit-content;
 }
 
 .content-wrap {
@@ -317,7 +316,6 @@ button:active {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
-  min-width: fit-content;
 }
 
 .resume {
