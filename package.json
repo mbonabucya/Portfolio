@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": ">This is  my personal Porto folio on which you can find my recent work and reach out to my social media platforms.",
+  "description": "> This is my personal Porto folio on which you can find my recent work and reach out to my social media platforms.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

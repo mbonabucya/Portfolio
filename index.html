@@ -15,17 +15,29 @@
   </head>
   <body>
       <header class="header-title">
-          <div class="navbar">
-              <a><p>James</p></a>
-              <nav class="navbar-list">
-                  <a href="#portfolio" > Portoflio </a>
-                  <a href="#about" > About </a>
-                  <a href="#contact" > Contact </a>
-              </nav>
-              <div class="icon">
-                <i class="fa fa-bars"></i>
-              </div>
-            </div>  
+        <div class="navbar">
+            <a><p>James</p></a>
+            <nav class="navbar-list" >
+                <i class="fa fa-times" id="closeMenu"></i>
+                <a href="#portfolio" id="nav-item"> Portfolio </a>
+                <a href="#about" id="nav-item2"> About </a>
+                <a href="#contact" id="nav-item3"> Contact </a>
+            </nav>
+            <div class="icon">
+              <i class="fa fa-bars"></i>
+            </div>
+        </div>  
+        <div class="desktop">
+            <a><p>James</p></a>
+            <nav class="desktop-version">
+                <a href="#portfolio"> Portfolio </a>
+                <a href="#about"> About </a>
+                <a href="#contact"> Contact </a>
+            </nav>
+            <div class="icon">
+              <i class="fa fa-bars"></i>
+            </div>
+        </div>  
       </header>
       <section class="headline">
           <div class="content-wrap">
@@ -346,5 +358,6 @@
                     </ul>
                 </form>
         </section>
+        <script src="./index.js"></script>
     </body>
 </html>
