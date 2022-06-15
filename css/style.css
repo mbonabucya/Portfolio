@@ -21,6 +21,7 @@ body {
   border: 1px solid white;
 }
 
+
 .navbar {
   display: flex;
   align-items: center;
@@ -42,6 +43,18 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+}
+
+.popup {
+  position: absolute;
+  height: 100%;
 }
 
 .headline {
