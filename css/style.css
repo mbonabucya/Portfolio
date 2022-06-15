@@ -61,7 +61,6 @@ body {
 
 .description p {
   font-weight: 400;
-  size: 16px;
   line-height: 24px;
   font-size: 16px;
   color: #344563;
@@ -576,7 +575,7 @@ textarea input::placeholder {
   .image {
     height: 448px;
     width: 544px;
-    margin-top: 24px 0 24px 24px;
+    margin: 24px 0 24px 24px;
   }
 
   .about-project {

@@ -1,29 +1,8 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": ">This is  my personal Porto folio on which you can find my recent work and reach out to my social media platforms.",
+  "description": "> This is my personal Porto folio on which you can find my recent work and reach out to my social media platforms.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mbonabucya/Portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mbonabucya/Portfolio/issues"
-  },
-  "homepage": "https://github.com/mbonabucya/Portfolio#readme",
-  "devDependencies": {
-    "hint": "^6.2.0",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
-  },
   "dependencies": {
     "abab": "^2.0.6",
     "abbrev": "^1.1.1",
@@ -59,7 +38,6 @@
     "aws-sign2": "^0.7.0",
     "aws4": "^1.11.0",
     "axe-core": "^4.4.2",
-    "babel-eslint": "^10.1.0",
     "bail": "^1.0.5",
     "balanced-match": "^1.0.2",
     "base64-js": "^1.5.1",
@@ -172,11 +150,8 @@
     "escape-goat": "^2.1.1",
     "escape-string-regexp": "^1.0.5",
     "escodegen": "^2.0.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-module-utils": "^2.7.3",
-    "eslint-plugin-import": "^2.26.0",
     "eslint-scope": "^5.1.1",
     "eslint-utils": "^2.1.0",
     "eslint-visitor-keys": "^3.3.0",
@@ -530,7 +505,7 @@
     "spdx-expression-parse": "^3.0.1",
     "spdx-license-ids": "^3.0.11",
     "specificity": "^0.4.1",
-    "sprintf-js": "^1.0.3",
+    "sprintf-js": "^1.1.2",
     "sshpk": "^1.17.0",
     "ssri": "^9.0.1",
     "statuses": "^2.0.1",
@@ -624,5 +599,30 @@
     "yargs-parser": "^20.2.9",
     "yauzl": "^2.10.0",
     "zwitch": "^1.0.5"
-  }
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "hint": "^6.2.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbonabucya/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbonabucya/Portfolio/issues"
+  },
+  "homepage": "https://github.com/mbonabucya/Portfolio#readme"
 }
