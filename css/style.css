@@ -123,13 +123,6 @@ body {
   mix-blend-mode: multiply;
 }
 
-#closeMenu {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  text-align: end;
-}
-
 .navbar-list a {
   color: #fff;
   text-decoration: none;
