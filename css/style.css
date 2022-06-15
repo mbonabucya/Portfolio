@@ -125,10 +125,9 @@ body {
 
 #closeMenu {
   color: white;
-  position:absolute;
-  margin-left:525px;
+  position: absolute;
+  margin-left: 525px;
   margin-right: 62px;
-
 }
 
 .navbar-list a {
