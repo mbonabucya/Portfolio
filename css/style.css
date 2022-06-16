@@ -46,14 +46,8 @@ body {
 }
 
 .main {
-  width: 100vw;
-  height: 100%;
   top: 0;
   position: fixed;
-}
-
-.popup {
-  position: absolute;
   height: 100%;
 }
 
@@ -135,12 +129,53 @@ body {
   width: 100%;
 }
 
+.project-popup {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 18px 18px 18px;
+  width: 100vw;
+  background: #FFFFFF;
+  border: 1px solid #DFE1E6;
+  border-radius: 16px;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  
+}
+
+.project-header h3 {
+  width: 100%;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+}
+
+.project-header i {
+  margin-right: 30px;
+}
+
+.project1 {
+  width: 200px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
 #closeMenu {
   color: white;
-  height:12px ;
+  height: 12px;
   width: 12px;
-  margin-left:410px;
-  margin-top:30px;
+  margin-left: 410px;
+  margin-top: -30px;
 }
 
 .navbar-list a {

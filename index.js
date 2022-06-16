@@ -9,6 +9,41 @@ const works = document.querySelector('.works-container');
 const section = document.createElement('section');
 works.appendChild(section);
 
+const projects =[{
+  title:'Tonic',
+  type:['CANOPY','Back End dev','2015'],
+  description:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  image:'image/nature.png',
+  live:'see live',
+  source:'See source'
+},
+{
+  title:'Tonic',
+  type:['CANOPY','Back End dev','2015'],
+  description:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  image:'image/nature.png',
+  live:'see live',
+  source:'See source'
+},
+{
+  title:'Tonic',
+  type:['CANOPY','Back End dev','2015'],
+  description:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  image:'image/nature.png',
+  live:'see live',
+  source:'See source'
+},
+{
+  title:'Tonic',
+  type:['CANOPY','Back End dev','2015'],
+  description:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  image:'image/nature.png',
+  live:'see live',
+  source:'See source'
+}
+];
+
+
 section.innerHTML = `
 <div class="project">
 <div >
@@ -182,12 +217,12 @@ open.addEventListener('click', ()=>{
   const pop = document.createElement('section');
   pop.className='popup';
   pop.innerHTML =`
-  <div class="project">
+  <div class="project-popup">
     <div class="project-header">
       <h3>
         Tonic
       </h3>
-      <i class=" fa fa-times"></i>
+      <i class=" fa fa-times close"></i>
     </div>
     <div class="project-desc">
       <h4>CANOPY</h4>
@@ -224,10 +259,10 @@ open.addEventListener('click', ()=>{
          </div>
       <div class ="buttons">
         <button type="submit" class="project1" >
-          See live
+          See live<i class="fa fa-github"></i>
         </button>
         <button type="submit" class="project1" >
-          See source
+          See source<i class="fa fa-github"></i>
         </button>
       </div>
     </div>
@@ -237,7 +272,12 @@ open.addEventListener('click', ()=>{
   main.appendChild(pop);
   works.appendChild(main);
 
-} )
+const close_popup = document.querySelector('.close');
+close_popup.addEventListener('click' ,()=>{
+  main.remove(pop);
+})
+
+})
 
 
 
