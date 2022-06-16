@@ -98,11 +98,82 @@ function addProjects(n) {
  {    
   addProjects(i);
  }
+/*
+ const btn1 = document.querySelector('..project0');
+ const btn2 = document.querySelector('..project1');
+ const btn3 = document.querySelector('..project2');
+ const btn4 = document.querySelector('..project3');
 
+ function open_popup(index) {
+   const {
+   title, type, description , images, language,live, source} = projects[index];
 
+   const main = document.createElement('body');
+  main.className = 'main';
+  const pop = document.createElement('section');
+  pop.className='popup';
+  pop.innerHTML =`
+  <div class="project-popup">
+    <div class="project-header">
+      <h3>
+        ${title}
+      </h3>
+      <i class=" fa fa-times close"></i>
+    </div>
+    <div class="project-desc">
+      <h4>${type[0]}</h4>
+      <ul>
+          <li>${type[1]}</li>
+          <li>${type[2]}</li>
+        </ul>
+    </div>
+    <div class="project-details">
+        <div >
+        <img src=${images} alt="tonic-project" class="image"/>
+        </div>
+        <div class="about-project">
+            <p>
+            ${description} 
+            </p>
+        </div>
+        <div class="technology">
+            <ul>
+              <li>
+                <p>${language[0]}</p>
+              </li>
+               <li>
+                 <p>
+                 ${language[1]}
+                 </p>
+                </li>
+                <li>
+                 <p>
+                 ${language[2]}
+                 </p>
+               </li>
+            </ul>
+         </div>
+      <div class ="buttons">
+        <button type="submit" class="project1" >
+          See live<i class="fa fa-github"></i>
+        </button>
+        <button type="submit" class="project1" >
+          See source<i class="fa fa-github"></i>
+        </button>
+      </div>
+    </div>
+  </div>`;
+  main.appendChild(pop);
+  works.appendChild(main);
+   }
+
+   btn1.addEventListener('click', ()=>{
+    open_popup(0)
+   });
+   btn2.addEventListener('click', ()=>{
+    open_popup(1)
+   });*/
  
-
-
 const open = document.querySelector('.project0');
 open.addEventListener('click', ()=>{ 
   const main = document.createElement('body');
@@ -124,15 +195,16 @@ open.addEventListener('click', ()=>{
           <li>2015</li>
         </ul>
     </div>
-    <div class="project-details">
-        <div >
-          <img src="image/nature.png" alt="tonic-project" class="image"/>
-        </div>
+    <div >
+    <img src="image/nature.png" alt="tonic-project" class="image"/>
+    </div>
+    <div class="project-details-pop">
         <div class="about-project">
             <p>
                 A daily selection of privately personalized reads; no accounts or sign-ups required.
             </p>
         </div>
+        <div class="detailed-popup">
         <div class="technology">
             <ul>
               <li>
@@ -159,11 +231,11 @@ open.addEventListener('click', ()=>{
         </button>
       </div>
     </div>
+    </div>
   </div>`;
 
   main.appendChild(pop);
   works.appendChild(main);
-
 const close_popup = document.querySelector('.close');
 close_popup.addEventListener('click' ,()=>{
   main.remove(pop);
