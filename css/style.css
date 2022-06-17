@@ -10,7 +10,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   background-color: #e5e5e5;
 }
 
@@ -20,7 +20,6 @@ body {
   top: 0;
   border: 1px solid white;
 }
-
 
 .navbar {
   display: flex;
@@ -86,7 +85,7 @@ body {
   margin-left: 24px;
   width: 327px;
   height: 144px;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -111,7 +110,8 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 25px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   line-height: 1.2;
   padding-left: 24px;
 }
@@ -135,8 +135,8 @@ body {
   height: 100%;
   padding: 0 18px 18px 18px;
   width: 100vw;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #ffffff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
@@ -145,7 +145,6 @@ body {
   flex-direction: row;
   width: 100%;
   align-items: center;
-  
 }
 
 .project-header h3 {
@@ -154,7 +153,7 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .project-header i {
@@ -181,7 +180,7 @@ body {
 .navbar-list a {
   color: #fff;
   text-decoration: none;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -385,7 +384,8 @@ button:active {
   letter-spacing: 0.03em;
   border: 1px solid #396df2;
   padding: 10px 10px 10px 10px;
-  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Poppins", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
@@ -395,7 +395,8 @@ button:active {
   padding-top: 114px;
   margin-left: 24px;
   margin-right: 24px;
-  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Poppins", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -477,7 +478,8 @@ button:active {
 }
 
 .contact-wrapper h2 {
-  font-family: Poppins, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Poppins, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -581,7 +583,7 @@ textarea input::placeholder {
   }
 
   .description p {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -595,7 +597,8 @@ textarea input::placeholder {
     text-align: center;
     text-decoration: none;
     font-size: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     line-height: 1.2;
     padding-left: 24px;
   }
@@ -613,25 +616,22 @@ textarea input::placeholder {
     padding-top: 359px;
   }
 
-  .project-popup  {
-    margin-top:0;
+  .project-popup {
+    margin-top: 0;
     width: 100vh;
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
-
   }
 
   .project-details-pop {
     display: flex;
     flex-direction: row;
-    
   }
 
   .buttons {
     width: 350px;
   }
-
 
   .description {
     margin-left: 260px;
@@ -759,7 +759,7 @@ textarea input::placeholder {
   }
 
   .my-form textarea {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     width: 447px;
     height: 170px;
     border: 1px solid #cfd8dc;
@@ -784,7 +784,7 @@ textarea input::placeholder {
   }
 
   .my-form button:hover {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -797,7 +797,7 @@ textarea input::placeholder {
   }
 
   input::placeholder {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -807,7 +807,7 @@ textarea input::placeholder {
 
   textarea::placeholder {
     bottom: 15px;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
