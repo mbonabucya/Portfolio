@@ -94,21 +94,22 @@ function addProjects(n) {
         See Project
     </button>
 </div>
-</div>;
+</div>
   `;
-}
-
-for (let i = 0; i < projects.length; i++) {
+ }
+ 
+ for(let i=0 ; i<projects.length ; i++)
+ {    
   addProjects(i);
-}
-
-const open = document.querySelector(".project0");
-open.addEventListener("click", () => {
-  const main = document.createElement("body");
-  main.className = "main";
-  const pop = document.createElement("section");
-  pop.className = "popup";
-  pop.innerHTML = `
+ }
+ 
+const open = document.querySelector('.project0');
+open.addEventListener('click', ()=>{ 
+  const main = document.createElement('body');
+  main.className = 'main';
+  const pop = document.createElement('section');
+  pop.className='popup';
+  pop.innerHTML =`
   <div class="project-popup">
     <div class="project-header">
       <h3>
@@ -181,8 +182,42 @@ function close() {
   navmenu.style.top = "-100%";
 }
 
-hamburger.addEventListener("click", show);
-about.addEventListener("click", close);
-portfolio.addEventListener("click", close);
-contact.addEventListener("click", close);
-closeMenu.addEventListener("click", close);
+hamburger.addEventListener('click', show);
+about.addEventListener('click', close);
+portfolio.addEventListener('click', close);
+contact.addEventListener('click', close);
+closeMenu.addEventListener('click', close);
+
+const form = document.querySelector('form');
+
+let flag =1;
+
+function validate_email() {
+  const email = document.getElementById('mail');
+  const emailValue = email.value.trim();
+
+  if(emailValue !== emailValue.toLowerCase())
+  { 
+    document.querySelector('.error_message').style.visibility="visible";
+    flag=0;
+
+return 0;
+  }
+  flag=1;
+  return ;
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();// prevent sumitting
+
+  validate_email();// run checks
+
+  // deciding to submit or not
+  if (flag== 1) {
+    form.submit();
+  } else {
+    flag = 0;
+  }
+});
+
+
