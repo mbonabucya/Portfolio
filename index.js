@@ -186,3 +186,10 @@ about.addEventListener("click", close);
 portfolio.addEventListener("click", close);
 contact.addEventListener("click", close);
 closeMenu.addEventListener("click", close);
+
+
+const username  =document.getElementById('Name');
+const email  =document.getElementById('mail');
+const message = document.getElementById('msg');
+
+
