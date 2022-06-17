@@ -21,7 +21,6 @@ body {
   border: 1px solid white;
 }
 
-
 .navbar {
   display: flex;
   align-items: center;
@@ -135,8 +134,8 @@ body {
   height: 100%;
   padding: 0 18px 18px 18px;
   width: 100vw;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
@@ -145,7 +144,6 @@ body {
   flex-direction: row;
   width: 100%;
   align-items: center;
-  
 }
 
 .project-header h3 {
@@ -154,7 +152,7 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .project-header i {
@@ -607,25 +605,22 @@ textarea input::placeholder {
     padding-top: 359px;
   }
 
-  .project-popup  {
-    margin-top:0;
+  .project-popup {
+    margin-top: 0;
     width: 100vh;
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
-
   }
 
   .project-details-pop {
     display: flex;
     flex-direction: row;
-    
   }
 
   .buttons {
     width: 350px;
   }
-
 
   .description {
     margin-left: 260px;
