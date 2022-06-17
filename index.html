@@ -189,9 +189,11 @@
                             <textarea name="message" id="msg" placeholder="write your message here" required maxlength="500"></textarea>
                         </li>
                         <li>
-                            <button type="submit" value="send" class="resume">
+                            <div class="error_message"> Email should be in lowercase</div>
+                            <button type="submit" value="send" class="resume" onclick="validate_email()">
                                  Get It Touch
                             </button>
+                            
                         </li>
                     </ul>
                 </form>
