@@ -110,8 +110,14 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 25px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:
+    "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
   line-height: 1.2;
   padding-left: 24px;
 }
@@ -135,7 +141,7 @@ body {
   height: 100%;
   padding: 0 18px 18px 18px;
   width: 100vw;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
@@ -384,8 +390,15 @@ button:active {
   letter-spacing: 0.03em;
   border: 1px solid #396df2;
   padding: 10px 10px 10px 10px;
-  font-family: "Poppins", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:
+    "Poppins",
+    "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
@@ -395,8 +408,15 @@ button:active {
   padding-top: 114px;
   margin-left: 24px;
   margin-right: 24px;
-  font-family: "Poppins", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:
+    "Poppins",
+    "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -478,8 +498,15 @@ button:active {
 }
 
 .contact-wrapper h2 {
-  font-family: Poppins, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:
+    Poppins,
+    "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -532,6 +559,7 @@ button:active {
 textarea input::placeholder {
   padding: 15px 38px 15px 16px;
 }
+
 .error_message {
   visibility: hidden;
   color: red;
@@ -597,8 +625,14 @@ textarea input::placeholder {
     text-align: center;
     text-decoration: none;
     font-size: 25px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family:
+      "Lucida Sans",
+      "Lucida Sans Regular",
+      "Lucida Grande",
+      "Lucida Sans Unicode",
+      Geneva,
+      Verdana,
+      sans-serif;
     line-height: 1.2;
     padding-left: 24px;
   }
