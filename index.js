@@ -150,10 +150,10 @@ function addPopup(position) {
             </ul>
          </div>
       <div class ="buttons">
-        <a href="${projects[position].liveLink}"><button type="submit" >
+        <a href="${projects[position].liveLink}"target="_blank"><button type="submit" >
         See Live<i class="fa fa-github"></i>
         </button></a>
-        <a href="${projects[position].sourceLink}" target="_blank>
+        <a href="${projects[position].sourceLink}" target="_blank">
         <button type="submit" class="source" >See source
         <i class="fa fa-github"></i>
         </button></a>
