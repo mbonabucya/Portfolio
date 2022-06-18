@@ -585,7 +585,7 @@ textarea input::placeholder {
   }
 
   .about-project {
-    width: 496px;
+    padding-right: 120px;
   }
 
   #facebook-btn {
