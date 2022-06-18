@@ -191,7 +191,7 @@ closeMenu.addEventListener('click', close);
 
 const form = document.querySelector('form');
 
-let flag = 1;
+let newFlag = 1;
 
 function validateEmail() {
   const email = document.getElementById('mail');
@@ -199,54 +199,20 @@ function validateEmail() {
 
   if (emailValue !== emailValue.toLowerCase()) {
     document.querySelector('.error_message').style.visibility = 'visible';
-    flag = 0;
+    newFlag = 0;
 
     return 0;
   }
-  flag = 1;
+  newFlag = 1;
   return 1;
 }
-
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
+  e.preventDefault(); // prevent sumitting
 
   validateEmail();
-  if (flag === 1) {
+  if (newFlag === 1) {
     form.submit();
   } else {
-    flag = 0;
+    newFlag = 0;
   }
 });
-
-hamburger.addEventListener('click', show);
-about.addEventListener('click', close);
-portfolio.addEventListener('click', close);
-contact.addEventListener('click', close);
-closeMenu.addEventListener('click', close);
-
-const username = document.getElementById('Name');
-const email = document.getElementById('mail');
-const message = document.getElementById('msg');
-
-const Values = (username, email, message) => {
-  const userData = JSON.stringify({ username, email, message });
-  localStorage.setItem('userData', userData);
-};
-
-function populatedata() {
-  const inputValues = JSON.parse(localStorage.getItem('userData'));
-  if (inputValues) {
-    username.value = inputValues.username;
-    email.value = inputValues.email;
-    message.value = inputValues.message;
-  }
-}
-
-function getValues() {
-  username.addEventListener('input', () => Values(username.value, email.value, message.value));
-  email.addEventListener('input', () => Values(username.value, email.value, message.value));
-  message.addEventListener('input', () => Values(username.value, email.value, message.value));
-}
-
-populatedata();
-getValues();
