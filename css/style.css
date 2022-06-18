@@ -158,16 +158,6 @@ body {
   height: 100%;
 }
 
-.project-popup {
-      margin-top: 30px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-}
-
 .project-header {
   display: flex;
   flex-direction: row;
