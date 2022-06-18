@@ -5,6 +5,7 @@ const portfolio = document.querySelector('#nav-item2');
 const contact = document.querySelector('#nav-item3');
 const closeMenu = document.querySelector('#closeMenu');
 const works = document.querySelector('.works-container');
+const myPopup = document.querySelector('body');
 const section = document.createElement('div');
 works.appendChild(section);
 const projects = [
@@ -44,7 +45,7 @@ const projects = [
     type: ['Uber', 'Lead Developer', '2018'],
     description:
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    images: 'image/nature.png',
+    images: 'image/uber.png',
     language: ['html', 'css', 'javascript'],
     liveLink: 'https://mbonabucya.github.io/Portfolio/',
     sourceLink: 'https://github.com/mbonabucya/Portfolio',
@@ -115,10 +116,10 @@ function addPopup(position) {
       <i class=" fa fa-times close"></i>
     </div>
     <div class="project-desc">
-      <h4>CANOPY</h4>
+      <h4>${projects[position].type[0]}</h4>
       <ul>
-          <li>Back End dev</li>
-          <li>2015</li>
+          <li>${projects[position].type[1]}</li>
+          <li>${projects[position].type[2]}</li>
         </ul>
     </div>
     <div >
@@ -161,8 +162,7 @@ function addPopup(position) {
     </div>
   </div>`;
   popup.id = 'project-pop';
-  works.appendChild(popup);
-  document.body.style.overflowY = 'hidden';
+  myPopup.appendChild(popup);
 }
 
 projectButtons.forEach((btn, index) => {
@@ -171,7 +171,7 @@ projectButtons.forEach((btn, index) => {
     const pophtml = document.getElementById('project-pop');
     const closePopup = document.querySelector('.close');
     closePopup.addEventListener('click', () => {
-      works.removeChild(pophtml);
+      myPopup.removeChild(pophtml);
     });
   });
 });
