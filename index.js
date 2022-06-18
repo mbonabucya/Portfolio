@@ -191,7 +191,7 @@ closeMenu.addEventListener('click', close);
 
 const form = document.querySelector('form');
 
-let flag = 1;
+let newFlag = 1;
 
 function validateEmail() {
   const email = document.getElementById('mail');
@@ -199,11 +199,11 @@ function validateEmail() {
 
   if (emailValue !== emailValue.toLowerCase()) {
     document.querySelector('.error_message').style.visibility = 'visible';
-    flag = 0;
+    newFlag = 0;
 
     return 0;
   }
-  flag = 1;
+  newFlag = 1;
   return 1;
 }
 
@@ -213,9 +213,9 @@ form.addEventListener('submit', (e) => {
   validateEmail(); // run checks
 
   // deciding to submit or not
-  if (flag === 1) {
+  if (newFlag === 1) {
     form.submit();
   } else {
-    flag = 0;
+    newFlag = 0;
   }
 });
