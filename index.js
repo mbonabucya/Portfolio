@@ -206,14 +206,3 @@ function validateEmail() {
   newFlag = 1;
   return 1;
 }
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault(); // prevent sumitting
-
-  validateEmail();
-  if (newFlag === 1) {
-    form.submit();
-  } else {
-    newFlag = 0;
-  }
-});
