@@ -239,7 +239,6 @@ body {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
-  width: fit-content;
 }
 
 .project {
@@ -693,7 +692,7 @@ textarea input::placeholder {
   }
 
   .about-project {
-    width: 496px;
+    padding-right: 120px;
   }
 
   #facebook-btn {

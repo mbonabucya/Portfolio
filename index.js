@@ -10,6 +10,7 @@ const main = document.createElement('body');
 const popup = document.createElement('div');
 works.appendChild(section);
 
+
 const projects = [
   {
     title: 'Tonic',
@@ -19,6 +20,7 @@ const projects = [
     images: 'image/nature.png',
     language: ['html', 'css', 'javascript'],
     live: 'see live',
+
     sourceLink: 'https://github.com/mbonabucya/Portfolio',
   },
   {
@@ -30,6 +32,7 @@ const projects = [
     language: ['html', 'css', 'javascript'],
     live: 'see live',
     sourceLink: 'https://github.com/mbonabucya/Portfolio',
+
   },
   {
     title: 'Facebook 360',
@@ -39,6 +42,7 @@ const projects = [
     images: 'image/blog_drbl.png',
     language: ['html', 'css', 'javascript'],
     live: 'see live',
+
     sourceLink: 'https://github.com/mbonabucya/Portfolio',
   },
   {
@@ -185,7 +189,7 @@ const open = document.querySelector('.project0');
 open.addEventListener('click', () => {
   const main = document.createElement('body');
   main.className = 'main';
-  const pop = document.createElement('div');
+  const pop = document.createElement('section');
   pop.className = 'popup';
   pop.innerHTML = `
   <div class="project-popup">
@@ -294,3 +298,36 @@ form.addEventListener('submit', (e) => {
     flag = 0;
   }
 });
+
+hamburger.addEventListener('click', show);
+about.addEventListener('click', close);
+portfolio.addEventListener('click', close);
+contact.addEventListener('click', close);
+closeMenu.addEventListener('click', close);
+
+const username = document.getElementById('Name');
+const email = document.getElementById('mail');
+const message = document.getElementById('msg');
+
+const Values = (username, email, message) => {
+  const userData = JSON.stringify({ username, email, message });
+  localStorage.setItem('userData', userData);
+};
+
+function populatedata() {
+  const inputValues = JSON.parse(localStorage.getItem('userData'));
+  if (inputValues) {
+    username.value = inputValues.username;
+    email.value = inputValues.email;
+    message.value = inputValues.message;
+  }
+}
+
+function getValues() {
+  username.addEventListener('input', () => Values(username.value, email.value, message.value));
+  email.addEventListener('input', () => Values(username.value, email.value, message.value));
+  message.addEventListener('input', () => Values(username.value, email.value, message.value));
+}
+
+populatedata();
+getValues();
