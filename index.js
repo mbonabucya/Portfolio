@@ -6,6 +6,8 @@ const contact = document.querySelector('#nav-item3');
 const closeMenu = document.querySelector('#closeMenu');
 const works = document.querySelector('.works-container');
 const section = document.createElement('div');
+const main = document.createElement('body');
+const pop = document.createElement('div');
 works.appendChild(section);
 
 const projects = [
@@ -90,7 +92,7 @@ function addProjects(n) {
             </li>
         </ul>
     </div>
-    <button type="submit" class="project${n}" >
+    <button type="submit" class="project${n} btn" >
         See Project
     </button>
 </div>
@@ -101,12 +103,89 @@ function addProjects(n) {
 for (let i = 0; i < projects.length; i += 1) {
   addProjects(i);
 }
+const projectButtons = document.querySelectorAll('.btn');
+
+function addPopup(position) {
+  const main = document.createElement('body');
+  main.className = 'main';
+  const popup = document.createElement('div');
+  popup.className = 'popup';
+  popup.innerHTML = `
+  <div class="project-popup">
+    <div class="project-header">
+      <h3>
+      ${projects[position].title}
+      </h3>
+      <i class=" fa fa-times close"></i>
+    </div>
+    <div class="project-desc">
+      <h4>CANOPY</h4>
+      <ul>
+          <li>Back End dev</li>
+          <li>2015</li>
+        </ul>
+    </div>
+    <div >
+    <img src="${projects[position].images}" alt="tonic-project" class="image"/>
+    </div>
+    <div class="project-details-pop">
+        <div class="about-project">
+            <p>
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+            </p>
+        </div>
+        <div class="detailed-popup">
+        <div class="technology">
+            <ul>
+              <li>
+                <p>html</p>
+              </li>
+               <li>
+                 <p>
+                    css
+                 </p>
+                </li>
+                <li>
+                 <p>
+                    javascript
+                 </p>
+               </li>
+            </ul>
+         </div>
+      <div class ="buttons">
+        <button type="submit" class="project1" >
+          See live<i class="fa fa-github"></i>
+        </button>
+        <button type="submit" class="project1" >
+          See source<i class="fa fa-github"></i>
+        </button>
+      </div>
+    </div>
+    </div>
+  </div>`;
+  popup.id = 'project-pop';
+  main.appendChild(popup);
+  works.appendChild(main);
+  document.body.classList.toggle('display-none');
+  document.body.classList.toggle('no-scroll');
+}
+
+projectButtons.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    addPopup(index);
+    // const pophtml = document.getElementById('project-pop');
+    const closePopup = document.querySelector('.close');
+    closePopup.addEventListener('click', () => {
+      main.remove(pop);
+    });
+  });
+});
 
 const open = document.querySelector('.project0');
 open.addEventListener('click', () => {
   const main = document.createElement('body');
   main.className = 'main';
-  const pop = document.createElement('section');
+  const pop = document.createElement('div');
   pop.className = 'popup';
   pop.innerHTML = `
   <div class="project-popup">
