@@ -864,11 +864,11 @@ textarea input::placeholder {
       opacity: 1;
     }
   }
-   /* .popup{
+   .popup{
     backdrop-filter: blur(0.3125rem);
     -webkit-backdrop-filter: blur(0.3125rem);
     -moz-backdrop-filter: blur(0.3125rem);
     margin-left: 200px;
     height: 100vh;
-   } */
+   }
 }

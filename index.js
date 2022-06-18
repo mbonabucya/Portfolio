@@ -7,7 +7,7 @@ const closeMenu = document.querySelector('#closeMenu');
 const works = document.querySelector('.works-container');
 const section = document.createElement('div');
 const main = document.createElement('body');
-const pop = document.createElement('div');
+const popup = document.createElement('div');
 works.appendChild(section);
 
 const projects = [
@@ -19,7 +19,7 @@ const projects = [
     images: 'image/nature.png',
     language: ['html', 'css', 'javascript'],
     live: 'see live',
-    source: 'See source',
+    sourceLink: 'https://github.com/mbonabucya/Portfolio',
   },
   {
     title: 'Multi-Post Stories',
@@ -29,7 +29,7 @@ const projects = [
     images: 'image/arts.png',
     language: ['html', 'css', 'javascript'],
     live: 'see live',
-    source: 'See source',
+    sourceLink: 'https://github.com/mbonabucya/Portfolio',
   },
   {
     title: 'Facebook 360',
@@ -39,7 +39,7 @@ const projects = [
     images: 'image/blog_drbl.png',
     language: ['html', 'css', 'javascript'],
     live: 'see live',
-    source: 'See source',
+    sourceLink: 'https://github.com/mbonabucya/Portfolio',
   },
   {
     title: 'Uber Navigation',
@@ -108,7 +108,6 @@ const projectButtons = document.querySelectorAll('.btn');
 function addPopup(position) {
   const main = document.createElement('body');
   main.className = 'main';
-  const popup = document.createElement('div');
   popup.className = 'popup';
   popup.innerHTML = `
   <div class="project-popup">
@@ -131,33 +130,33 @@ function addPopup(position) {
     <div class="project-details-pop">
         <div class="about-project">
             <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
+            ${projects[position].description}
             </p>
         </div>
         <div class="detailed-popup">
         <div class="technology">
             <ul>
               <li>
-                <p>html</p>
+                <p>${projects[position].language[0]}</p>
               </li>
                <li>
                  <p>
-                    css
+                 ${projects[position].language[1]}
                  </p>
                 </li>
                 <li>
                  <p>
-                    javascript
+                 ${projects[position].language[2]}
                  </p>
                </li>
             </ul>
          </div>
       <div class ="buttons">
         <button type="submit" class="project1" >
-          See live<i class="fa fa-github"></i>
+        ${projects[position].liveLink}<i class="fa fa-github"></i>
         </button>
         <button type="submit" class="project1" >
-          See source<i class="fa fa-github"></i>
+        ${projects[position].sourceLink}<i class="fa fa-github"></i>
         </button>
       </div>
     </div>
@@ -173,10 +172,11 @@ function addPopup(position) {
 projectButtons.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     addPopup(index);
-    // const pophtml = document.getElementById('project-pop');
+    const pophtml = document.getElementById('project-pop');
     const closePopup = document.querySelector('.close');
     closePopup.addEventListener('click', () => {
-      main.remove(pop);
+      main.removeChild(pophtml);
+      works.removeChild(pophtml);
     });
   });
 });
