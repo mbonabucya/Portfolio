@@ -207,11 +207,6 @@ body {
   text-decoration: none;
 }
 
-.button i {
-  color: red;
-  margin-left: 12px;
-}
-
 #closeMenu {
   color: white;
   height: 12px;
