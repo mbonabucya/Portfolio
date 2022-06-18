@@ -210,9 +210,7 @@ function validateEmail() {
 form.addEventListener('submit', (e) => {
   e.preventDefault(); // prevent sumitting
 
-  validateEmail(); // run checks
-
-  // deciding to submit or not
+  validateEmail();
   if (newFlag === 1) {
     form.submit();
   } else {
