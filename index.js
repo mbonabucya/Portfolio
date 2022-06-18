@@ -1,59 +1,59 @@
-const hamburger = document.querySelector(".icon");
-const navmenu = document.querySelector(".navbar-list");
-const about = document.querySelector("#nav-item");
-const portfolio = document.querySelector("#nav-item2");
-const contact = document.querySelector("#nav-item3");
-const closeMenu = document.querySelector("#closeMenu");
-const body = document.querySelector("body");
-const works = document.querySelector(".works-container");
-const section = document.createElement("div");
+const hamburger = document.querySelector('.icon');
+const navmenu = document.querySelector('.navbar-list');
+const about = document.querySelector('#nav-item');
+const portfolio = document.querySelector('#nav-item2');
+const contact = document.querySelector('#nav-item3');
+const closeMenu = document.querySelector('#closeMenu');
+const works = document.querySelector('.works-container');
+const section = document.createElement('div');
 works.appendChild(section);
-const newsection = document.createElement("section");
 
 const projects = [
   {
-    title: "Tonic",
-    type: ["CANOPY", "Back End dev", "2015"],
+    title: 'Tonic',
+    type: ['CANOPY', 'Back End dev', '2015'],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    images: "image/nature.png",
-    language: ["html", "css", "javascript"],
-    live: "see live",
-    source: "See source",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    images: 'image/nature.png',
+    language: ['html', 'css', 'javascript'],
+    live: 'see live',
+    source: 'See source',
   },
   {
-    title: "Multi-Post Stories",
-    type: ["FACEBOOK", "Full Stack dev", "2015"],
+    title: 'Multi-Post Stories',
+    type: ['FACEBOOK', 'Full Stack dev', '2015'],
     description:
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-    images: "image/arts.png",
-    language: ["html", "css", "javascript"],
-    live: "see live",
-    source: "See source",
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    images: 'image/arts.png',
+    language: ['html', 'css', 'javascript'],
+    live: 'see live',
+    source: 'See source',
   },
   {
-    title: "Facebook 360",
-    type: ["Facebook", "Full Stack dev", "2015"],
+    title: 'Facebook 360',
+    type: ['Facebook', 'Full Stack dev', '2015'],
     description:
-      "Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    images: "image/blog_drbl.png",
-    language: ["html", "css", "javascript"],
-    live: "see live",
-    source: "See source",
+      'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    images: 'image/blog_drbl.png',
+    language: ['html', 'css', 'javascript'],
+    live: 'see live',
+    source: 'See source',
   },
   {
-    title: "Uber Navigation",
-    type: ["Uber", "Lead Developer", "2018"],
+    title: 'Uber Navigation',
+    type: ['Uber', 'Lead Developer', '2018'],
     description:
-      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
-    images: "image/nature.png",
-    language: ["html", "css", "javascript"],
-    live: "see live",
-    source: "See source",
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    images: 'image/nature.png',
+    language: ['html', 'css', 'javascript'],
+    liveLink: '',
+    sourceLink: 'https://github.com/mbonabucya/Portfolio',
   },
 ];
 function addProjects(n) {
-  const { title, type, description, images, language } = projects[n];
+  const {
+    title, type, description, images, language,
+  } = projects[n];
   section.innerHTML += `
   <div class="project">
 <div >
@@ -98,16 +98,16 @@ function addProjects(n) {
   `;
 }
 
-for (let i = 0; i < projects.length; i++) {
+for (let i = 0; i < projects.length; i += 1) {
   addProjects(i);
 }
 
-const open = document.querySelector(".project0");
-open.addEventListener("click", () => {
-  const main = document.createElement("body");
-  main.className = "main";
-  const pop = document.createElement("section");
-  pop.className = "popup";
+const open = document.querySelector('.project0');
+open.addEventListener('click', () => {
+  const main = document.createElement('body');
+  main.className = 'main';
+  const pop = document.createElement('section');
+  pop.className = 'popup';
   pop.innerHTML = `
   <div class="project-popup">
     <div class="project-header">
@@ -164,54 +164,52 @@ open.addEventListener("click", () => {
 
   main.appendChild(pop);
   works.appendChild(main);
-  const close_popup = document.querySelector(".close");
-  close_popup.addEventListener("click", () => {
+  const closePopup = document.querySelector('.close');
+  closePopup.addEventListener('click', () => {
     main.remove(pop);
   });
 });
 
 function show() {
-  navmenu.style.top = "0";
-  navmenu.style.left = "10px";
-  navmenu.style.position = "fixed";
-  navmenu.style.width = "100%";
+  navmenu.style.top = '0';
+  navmenu.style.left = '10px';
+  navmenu.style.position = 'fixed';
+  navmenu.style.width = '100%';
 }
 
 function close() {
-  navmenu.style.top = "-100%";
+  navmenu.style.top = '-100%';
 }
 
-hamburger.addEventListener("click", show);
-about.addEventListener("click", close);
-portfolio.addEventListener("click", close);
-contact.addEventListener("click", close);
-closeMenu.addEventListener("click", close);
+hamburger.addEventListener('click', show);
+about.addEventListener('click', close);
+portfolio.addEventListener('click', close);
+contact.addEventListener('click', close);
+closeMenu.addEventListener('click', close);
 
-const form = document.querySelector("form");
+const form = document.querySelector('form');
 
 let flag = 1;
 
-function validate_email() {
-  const email = document.getElementById("mail");
+function validateEmail() {
+  const email = document.getElementById('mail');
   const emailValue = email.value.trim();
 
   if (emailValue !== emailValue.toLowerCase()) {
-    document.querySelector(".error_message").style.visibility = "visible";
+    document.querySelector('.error_message').style.visibility = 'visible';
     flag = 0;
 
     return 0;
   }
   flag = 1;
-  return;
+  return 1;
 }
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault(); // prevent sumitting
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
 
-  validate_email(); // run checks
-
-  // deciding to submit or not
-  if (flag == 1) {
+  validateEmail();
+  if (flag === 1) {
     form.submit();
   } else {
     flag = 0;
