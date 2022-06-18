@@ -239,7 +239,8 @@ body {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
-  width: fit-content;
+  min-width: fit-content;
+  max-width: 100vh;
 }
 
 .project {
