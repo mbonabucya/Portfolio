@@ -4,12 +4,10 @@ const about = document.querySelector('#nav-item');
 const portfolio = document.querySelector('#nav-item2');
 const contact = document.querySelector('#nav-item3');
 const closeMenu = document.querySelector('#closeMenu');
-// const body = document.querySelector("body");
 const works = document.querySelector('.works-container');
+const myPopup = document.querySelector('body');
 const section = document.createElement('div');
 works.appendChild(section);
-// const newsection = document.createElement("section");
-
 const projects = [
   {
     title: 'Tonic',
@@ -18,8 +16,8 @@ const projects = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     images: 'image/nature.png',
     language: ['html', 'css', 'javascript'],
-    live: 'see live',
-    source: 'See source',
+    liveLink: 'https://mbonabucya.github.io/Portfolio/',
+    sourceLink: 'https://github.com/mbonabucya/Portfolio',
   },
   {
     title: 'Multi-Post Stories',
@@ -28,8 +26,9 @@ const projects = [
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     images: 'image/arts.png',
     language: ['html', 'css', 'javascript'],
-    live: 'see live',
-    source: 'See source',
+    liveLink: 'https://mbonabucya.github.io/Portfolio/',
+    sourceLink: 'https://github.com/mbonabucya/Portfolio',
+
   },
   {
     title: 'Facebook 360',
@@ -38,18 +37,18 @@ const projects = [
       'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     images: 'image/blog_drbl.png',
     language: ['html', 'css', 'javascript'],
-    live: 'see live',
-    source: 'See source',
+    liveLink: 'https://mbonabucya.github.io/Portfolio/',
+    sourceLink: 'https://github.com/mbonabucya/Portfolio',
   },
   {
     title: 'Uber Navigation',
     type: ['Uber', 'Lead Developer', '2018'],
     description:
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    images: 'image/nature.png',
+    images: 'image/uber.png',
     language: ['html', 'css', 'javascript'],
-    live: 'see live',
-    source: 'See source',
+    liveLink: 'https://mbonabucya.github.io/Portfolio/',
+    sourceLink: 'https://github.com/mbonabucya/Portfolio',
   },
 ];
 function addProjects(n) {
@@ -92,7 +91,7 @@ function addProjects(n) {
             </li>
         </ul>
     </div>
-    <button type="submit" class="project${n}" >
+    <button type="submit" class="project${n} btn" >
         See Project
     </button>
 </div>
@@ -103,72 +102,77 @@ function addProjects(n) {
 for (let i = 0; i < projects.length; i += 1) {
   addProjects(i);
 }
+const projectButtons = document.querySelectorAll('.btn');
 
-const open = document.querySelector('.project0');
-open.addEventListener('click', () => {
-  const main = document.createElement('body');
-  main.className = 'main';
-  const pop = document.createElement('section');
-  pop.className = 'popup';
-  pop.innerHTML = `
+function addPopup(position) {
+  const popup = document.createElement('section');
+  popup.className = 'popup';
+  popup.innerHTML = `
   <div class="project-popup">
     <div class="project-header">
       <h3>
-        Tonic
+      ${projects[position].title}
       </h3>
       <i class=" fa fa-times close"></i>
     </div>
     <div class="project-desc">
-      <h4>CANOPY</h4>
+      <h4>${projects[position].type[0]}</h4>
       <ul>
-          <li>Back End dev</li>
-          <li>2015</li>
+          <li>${projects[position].type[1]}</li>
+          <li>${projects[position].type[2]}</li>
         </ul>
     </div>
     <div >
-    <img src="image/nature.png" alt="tonic-project" class="image"/>
+    <img src="${projects[position].images}" alt="tonic-project" class="image"/>
     </div>
     <div class="project-details-pop">
         <div class="about-project">
             <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
+            ${projects[position].description}
             </p>
         </div>
         <div class="detailed-popup">
         <div class="technology">
             <ul>
               <li>
-                <p>html</p>
+                <p>${projects[position].language[0]}</p>
               </li>
                <li>
                  <p>
-                    css
+                 ${projects[position].language[1]}
                  </p>
                 </li>
                 <li>
                  <p>
-                    javascript
+                 ${projects[position].language[2]}
                  </p>
                </li>
             </ul>
          </div>
       <div class ="buttons">
-        <button type="submit" class="project1" >
-          See live<i class="fa fa-github"></i>
-        </button>
-        <button type="submit" class="project1" >
-          See source<i class="fa fa-github"></i>
-        </button>
+        <a href="${projects[position].liveLink}"target="_blank"><button type="submit" >
+        See Live<i class="fa fa-github"></i>
+        </button></a>
+        <a href="${projects[position].sourceLink}" target="_blank">
+        <button type="submit" class="source" >See source
+        <i class="fa fa-github"></i>
+        </button></a>
       </div>
     </div>
     </div>
   </div>`;
+  popup.id = 'project-pop';
+  myPopup.appendChild(popup);
+}
 
-  main.appendChild(pop);
-  works.appendChild(main);
-  const closePopup = document.querySelector('.close');
-  closePopup.addEventListener('click', () => {
-    main.remove(pop);
+projectButtons.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    addPopup(index);
+    const pophtml = document.getElementById('project-pop');
+    const closePopup = document.querySelector('.close');
+    closePopup.addEventListener('click', () => {
+      myPopup.removeChild(pophtml);
+    });
   });
 });
 
